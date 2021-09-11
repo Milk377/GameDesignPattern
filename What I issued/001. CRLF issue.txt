@@ -1,0 +1,12 @@
+이슈 : 윈도우 데스크탑용 깃허브 사용으로 Design pattern 업로드중 CRLF / LF 이슈가 발생, 업로드 실패
+
+원인 : Windows 에서는 line ending 으로 CR( Carriage-Return , \r ) 과 LF (Line Feed, \n) 을 모두 사용하고
+Unix 나 Mac OS 는 LF 만사용한다.
+
+해결 가이드 : 이를 해결하기 위해 깃 설정에서 autocrlf 를 사용한다.
+
+실제 해결 : git ignore 에서 주석을 제거하여 해결하였다.
+
+
+
+
