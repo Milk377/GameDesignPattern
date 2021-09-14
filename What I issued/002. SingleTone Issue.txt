@@ -1,0 +1,7 @@
+1. 싱글톤에서 사용하는 Don't destroy on Load 는 Game Object에만 적용이 가능하다.
+Canvas UI 형식의 버튼에는 적용할 수 없다.
+
+이유는 아직 모름. 
+
+그래서 스크립트 이름이 SingleTone_Button이다. 
+처음에 버튼을 신 로드에서도 유지시키려고 하였으나, 실패한 것. 
