@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &277282168
 GameObject:
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1965209712}
+      - m_Target: {fileID: 1164079531}
         m_TargetAssemblyTypeName: Strategy_WeaponManager, Assembly-CSharp
         m_MethodName: ChangeMissile
         m_Mode: 1
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1965209712}
+      - m_Target: {fileID: 1164079531}
         m_TargetAssemblyTypeName: Strategy_WeaponManager, Assembly-CSharp
         m_MethodName: ChangeLaser
         m_Mode: 1
@@ -688,6 +688,7 @@ GameObject:
   - component: {fileID: 1164079529}
   - component: {fileID: 1164079528}
   - component: {fileID: 1164079527}
+  - component: {fileID: 1164079531}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -769,8 +770,23 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164079531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164079526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e5be91454e22c48ace21ba90fb3e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arrow: {fileID: 5490046635982516781, guid: 59c747bc7ee2e3c448746d8967f780dc, type: 3}
+  _laser: {fileID: 8723024492119886071, guid: 64301184145a9dc4ab66d4971a20779a, type: 3}
+  _missile: {fileID: 8012532771645853912, guid: 0e3b58a3ecd045449a94edc7287bdbd3, type: 3}
 --- !u!1 &1240014352
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +870,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1965209712}
+      - m_Target: {fileID: 1164079531}
         m_TargetAssemblyTypeName: Strategy_WeaponManager, Assembly-CSharp
         m_MethodName: ChangeArrow
         m_Mode: 1
@@ -998,7 +1014,7 @@ RectTransform:
   - {fileID: 1388534225}
   - {fileID: 277282169}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1088,7 +1104,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1965209712}
+      - m_Target: {fileID: 1164079531}
         m_TargetAssemblyTypeName: Strategy_WeaponManager, Assembly-CSharp
         m_MethodName: Fire
         m_Mode: 1
@@ -1472,46 +1488,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 14.563, y: 0, z: 0}
---- !u!1 &1965209710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1965209711}
-  - component: {fileID: 1965209712}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1965209711
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965209710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.1499996, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1965209712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965209710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e5be91454e22c48ace21ba90fb3e4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
