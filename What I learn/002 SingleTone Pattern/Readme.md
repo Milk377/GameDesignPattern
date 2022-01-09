@@ -7,3 +7,5 @@
 
 ![Honeycam 2021-09-15 06-16-07](https://user-images.githubusercontent.com/37606666/133335601-1a59a52c-3c71-493a-91ba-1596317c0c63.gif)
 Don't destroy game object after moving scene
+
+* 똑같은 Singleton 코드를 다른 컴퍼넌트에 넣으면, 안된다. 하나만 적용된다.
