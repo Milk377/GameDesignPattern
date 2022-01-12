@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum UnitType
-{
-    Marine,
-    Firebat
-}
+//public enum UnitType
+//{
+//    Marine,
+//    Firebat
+//}
 
 public class FactoryUnit : MonoBehaviour
 {
