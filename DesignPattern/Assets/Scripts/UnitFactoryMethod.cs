@@ -5,6 +5,9 @@ using UnityEngine;
 public class UnitFactoryMethod : MonoBehaviour
 {
     UnitGenerator[] unitGenerators = null;
+    BossGeneratorA bossGenerators1 = null;
+    BossGeneratorB bossGenerators2 = null;
+
 
     private void Start()
     {
@@ -13,6 +16,15 @@ public class UnitFactoryMethod : MonoBehaviour
 
         unitGenerators[0] = new PatternAGenerator();
         unitGenerators[1] = new PatternBGenerator();
+
+        bossGenerators1 = GetComponent<BossGeneratorA>();
+        Transform tran = this.gameObject.transform;
+        bossGenerators1.CreateBoss(tran);
+
+        bossGenerators2 = GetComponent<BossGeneratorB>();
+        bossGenerators2.CreateBoss(tran);
+
+
 
     }
 
